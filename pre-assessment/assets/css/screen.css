@@ -63,6 +63,15 @@ body {
 	border-bottom-style: solid;
 	border-bottom-color: #CCC;
 }
+
+#content h2 {
+	color:	#010326;
+}
+
+#content h3 {
+	color: #011826
+
+}
 #content {
 	margin: 20px;
 }
@@ -70,6 +79,11 @@ body {
 	margin-top: 5px;
 	margin-bottom: 15px;
 }
+
+.alert{
+	background-color: #A69541;
+}
+
 #footer {
 	background-color: #000;
 	color: #FFF;
