@@ -65,12 +65,15 @@ body {
 }
 
 #content h2 {
-	color:	#010326;
+	color:	#592735;
 }
 
 #content h3 {
-	color: #011826
+	color: #592735
+}
 
+#content h4 {
+	color: #592735
 }
 #content {
 	margin: 20px;
@@ -80,9 +83,6 @@ body {
 	margin-bottom: 15px;
 }
 
-.alert{
-	background-color: #A69541;
-}
 
 #footer {
 	background-color: #000;
@@ -97,5 +97,6 @@ body {
 }
 
 .alert{
-	background: red;
+	background: #5c7358;
+	padding: 10px;
 }
