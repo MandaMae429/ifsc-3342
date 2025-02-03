@@ -1,8 +1,9 @@
-* {
+/** {
 	margin: 0px;
 	padding: 0px;
 }
-/*the star means the entire page has zero margin and zero padding/ reset box model */
+/*the star means the entire page has zero margin and zero padding/ reset box model;
+had to comment out for the dl and terms to show up properly*/
 body {
 	text-align: center;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -21,8 +22,7 @@ body {
 	margin-top: 20px;
 	border: 1px solid #CCC;
 }
-#header {
-}
+
 
 #header h1 a {
 	width:800px;
@@ -82,8 +82,9 @@ body {
 	margin-top: 5px;
 	margin-bottom: 15px;
 }
-
-
+#content a:hover{
+	background-color:#5c7358
+}
 #footer {
 	background-color: #000;
 	color: #FFF;
@@ -100,3 +101,5 @@ body {
 	background: #5c7358;
 	padding: 10px;
 }
+
+  
