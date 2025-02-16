@@ -1,0 +1,27 @@
+main{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    gap:15%;
+    padding: 15px;
+    margin:auto;
+
+}
+
+header{
+    grid-column: span 10;
+    background-color: (0,0,0,0.3);
+}
+
+#content{
+    grid-column: span 7;
+    background-color: (0,0,0,0.3);
+}
+
+.widget{
+    grid-column: span 6 / 11;
+}
+
+footer{
+    grid-column: span 10;
+    background-color: (0,0,0,0.3);
+}
