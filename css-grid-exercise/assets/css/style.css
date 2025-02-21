@@ -1,27 +1,38 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
 main{
     display: grid;
-    grid-template-columns: 7fr 3fr;
+    grid-template-columns: repeat(7, 1fr);
     gap:15%;
-    padding: 15px;
+    padding: 7.5px;
     margin:auto;
-
 }
 
-header{
-    grid-column: span 10;
-    background-color: (0,0,0,0.3);
+header.primary{
+    grid-column-start: 1;
+    grid-column-end: 9;
+    background-color: aquamarine;
 }
 
 #content{
-    grid-column: span 7;
-    background-color: (0,0,0,0.3);
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row: 2;
 }
 
-.widget{
-    grid-column: span 6 / 11;
+#blog{
+    grid-column-start: 6;
+    grid-column-end: 9;
 }
 
 footer{
-    grid-column: span 10;
-    background-color: (0,0,0,0.3);
+    grid-column: 1 / 9;
+    grid-row: 5;
 }
