@@ -1,7 +1,8 @@
 :root{
-  --main-bg-color: #6785AA;
+  --main-bg-color: #455871;
   --primary-type-color:#DDC9A6;
   --accent-color-1: #DBEBFF;
+  --visited-link-color: #E8BC57;
   --accent-color-dk: #3D7D80;
   --accent-color-yw:#FFFADB;
 }
@@ -12,22 +13,88 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  
-  grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "header header header"
-      "main main main"
-      "footer footer footer";
+
+  img {
+    max-width: 100%;
   }
+
+.container {
+  max-width: 420px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.15);
+}
+
+.visually-hidden{
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+  }
+  
   body {
     font-family: "Share Tech Mono", monospace;
     font-weight: 400;
     font-style: normal;
-    color: red;
+    color: var(--primary-type-color);
+    background-color: var(--main-bg-color);
+    }
+
+a:link, a:visited {
+  color: var(--accent-color-1);
+}
+
+nav {
+  padding: 1px;
+}
+
+nav ul {
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  padding: 1px 15px 0px 3px;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a:link, nav a:visited {
+  display: block;
+  padding: 7.5px 15px;
+  border: 1px solid var(--primary-type-color);
+  text-align: center;
+  text-decoration: none;
+  font-size: .92em;
+  text-transform: lowercase;
+  transition: 1.5s;
+  margin-top: 10px;
   }
 
-  
+nav ul li a:hover{
+  background-color: var(--primary-type-color)
+}
+
+main {
+  padding: 2px 10px;
+}
+
+main h1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top:8px ;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main h1:before,
+main h1:after {
+  background-color: var(--accent-color-1);
+  content: "\a0";
+  height: 3px;
+  position: relative;
+}
