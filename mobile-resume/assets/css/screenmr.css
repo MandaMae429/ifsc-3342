@@ -1,12 +1,33 @@
+:root{
+  --main-bg-color: #6785AA;
+  --primary-type-color:#DDC9A6;
+  --accent-color-1: #DBEBFF;
+  --accent-color-dk: #3D7D80;
+  --accent-color-yw:#FFFADB;
+}
+
 html {
     box-sizing: border-box;
   }
-  *,
-  *:before,
-  *:after {
+  *, *:before, *:after {
     box-sizing: inherit;
   }
-
-  :root {
-    --
+  
+  grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
   }
+  body {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: red;
+  }
+
+  
