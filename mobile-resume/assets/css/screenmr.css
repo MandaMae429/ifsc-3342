@@ -98,3 +98,15 @@ main h1:after {
   height: 3px;
   position: relative;
 }
+
+dl {
+  display: grid;
+  grid-template: repeat(2,auto) / 6em 2fr;
+  font-size:.92rem;
+}
+
+dt {
+  font-weight: 900;
+  grid-column: 1;
+  padding: 10px 0;
+}
