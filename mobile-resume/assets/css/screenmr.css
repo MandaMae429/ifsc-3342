@@ -101,12 +101,20 @@ main h1:after {
 
 dl {
   display: grid;
-  grid-template: repeat(2,auto) / 6em 2fr;
+  grid-template: repeat(3,auto) / 9em 1fr;
   font-size:.92rem;
+  
 }
 
 dt {
-  font-weight: 900;
+  font-weight: 800;
   grid-column: 1;
-  padding: 10px 0;
+  padding: 7px 0;
+  border-bottom: 2px dotted var(--primary-type-color);
 }
+
+dd{
+  grid-column:2;
+  padding:7px 0;
+  border-bottom: 2px dotted var(--primary-type-color);
+ }
