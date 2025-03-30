@@ -224,10 +224,10 @@ main.container{
     grid-template-columns: 46% auto;
     gap:35px;
     grid-template-areas:
-      "title title"
-      "about about"
-      "experience skills"
-      "education ."
+    "title title"
+    "about about"
+    "experience skills"
+    "education ."
       ;
     }
   dt{
@@ -262,6 +262,11 @@ main.container{
   border-bottom:1px dotted;
   padding-bottom:50px
 } 
+
+
+
+    
+  }
   
-}
+  
 
