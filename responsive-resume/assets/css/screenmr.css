@@ -263,10 +263,27 @@ main.container{
   padding-bottom:50px
 } 
 
-
-
+@media screen and (min-width:992px){
+  
+  body{
+    font-size: clamp(.92rem, 2.5vw, 1.25rem);
+  }
+  
+  header.container{
+    max-width:1200px;
+    width:100%;
     
   }
   
-  
-
+  main.container{
+    max-width:1200px;
+    grid-template-columns: 46% auto;
+    gap:35px;
+    grid-template-areas:
+    "title title"
+    "about about"
+    "experience skills"
+    "education ."
+      ;
+    }
+  }
