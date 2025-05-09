@@ -1,11 +1,64 @@
-
+:root{
+    --text-color: #e0dbd1;
+    --accent-color-1: #868167;
+  
+}
+html{
+  box-sizing: border-box;
+  }
+  *, *::before, *::after{
+    box-sizing: inherit;
+  }
 
 body{
-    font-family: "Oswald", sans-serif;
+    font-family: "Cormorant Garamond", serif;
+     font-optical-sizing: auto;
+     font-weight: 700;
+     font-style: normal;
+    background-image: url('../img/bg.jpg');
+    background-size: cover 100%;
+    background-repeat: no-repeat;
+    
+}
+main::before{
+  backdrop-filter: blur(6px);
+}
+
+
+.container{
+  max-width: 420px;
+  width:100%;
+  margin: 0 auto;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.3); /* Black w/opacity/see-through */
+  color: var(--text-color);
+  width: 100%;
+  backdrop-filter: blur(6px);
+  
+}
+
+.img-container{
+  max-width: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+#oldfaithful h3,h2{ 
+  font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    color: aquamarine;
-    background-image: url('https://unsplash.com/photos/green-trees-on-mountain-during-daytime-e8G9I42Dxgw/download?force=true&w=1920');
-    background-size: cover;
+   
+
+}
+
+a:visited {
+  color: var(--accent-color-1);
+}
+
+a:link {
+  color: var(--text-color);
 }
