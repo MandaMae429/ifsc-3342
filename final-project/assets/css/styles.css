@@ -168,5 +168,13 @@ footer{
   .container{
     max-width:1200px;
     width:100%;
+    align-items: center;
+  }
+
+  footer{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+   
   }
 }
