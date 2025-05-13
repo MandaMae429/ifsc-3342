@@ -122,5 +122,25 @@ footer{
         
       }
 
+      @media screen and (min-width:992px){
+  
+  body{
+    font-size: clamp(.92rem, 2.5vw, 1.25rem);
+  }
+  
+  header.container{
+    max-width:1200px;
+    width:100%;
+    
+  }
+  
+  main.container{
+    max-width:1200px;
+    width:100%;
+    
+      
+    }
+}
+
     }
 
